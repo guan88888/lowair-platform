@@ -1,0 +1,20 @@
+{
+  "name": "skydome-aviation",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:h5": "UNI_INPUT_DIR=. uni -p h5",
+    "build:h5": "UNI_INPUT_DIR=. uni build -p h5",
+    "test:media": "node features/shared/media/tests/media-assets.test.mjs",
+    "test:contracts": "node --experimental-specifier-resolution=node --test features/market/services/contracts.test.mjs features/operations/services/contracts.test.mjs features/academy/tests/contracts.test.mjs features/assistant/tests/protocol.test.mjs features/shared/utils/route-options.test.mjs"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-alpha-5020220260725001",
+    "@dcloudio/uni-h5": "3.0.0-alpha-5020220260725001",
+    "vue": "3.4.21"
+  },
+  "devDependencies": {
+    "@dcloudio/vite-plugin-uni": "3.0.0-alpha-5020220260725001",
+    "vite": "5.2.8"
+  }
+}
